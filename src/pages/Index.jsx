@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -31,6 +32,7 @@ const Index = () => {
   return (
     <div className="h-screen w-screen flex flex-col items-center justify-center space-y-4 p-4">
       <h1 className="text-3xl text-center">Todo App</h1>
+      <Link to="/about" className="text-blue-500 underline">About</Link>
       <div className="w-full max-w-md space-y-4">
         <Card>
           <CardHeader>
